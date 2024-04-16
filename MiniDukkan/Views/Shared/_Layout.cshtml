@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MiniDukkan</title>
+    <link href="/twitter-bootstrap/css/bootstrap.css" rel="stylesheet" />
+</head>
+
+<body>
+  
+    <div  class="bg-dark text-white p-2">
+        <span class="navbar-brand m1-2">Mini Dükkan</span>       
+    </div>
+
+    <div class="row m-1 p-1">
+        <div id="Kategoriler" class="col-3">
+         <vc:navigasyon-menu></vc:navigasyon-menu>
+        </div>
+    </div>
+
+
+    <div class="col-9">
+        @RenderBody()
+    </div>
+   
+</body>
+</html>

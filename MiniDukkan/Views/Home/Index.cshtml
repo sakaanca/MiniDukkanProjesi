@@ -1,0 +1,11 @@
+﻿@*@model IQueryable<Urun>*@
+
+    @model UrunlerListesiViewModel
+
+@foreach(var u in Model.Urunler)
+{
+    <partial name="UrunOzet" model="u" />
+
+}
+
+<div sayfa-model="@Model.SayfalamaBilgi" sayfa-action="Index" page-classes-enabled="true" page-class="btn" page-class-normal="btn-outline-dark" page-class-selected="btn-primary" page-url-category="@Model.GuncelKategori" class="btn-group pull-right m-1"></div>

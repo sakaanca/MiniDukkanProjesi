@@ -1,0 +1,8 @@
+﻿@model IEnumerable<string>
+<a class="btn btn-block btn-outline-secondary " asp-action="Index" asp-controller="Home" asp-route-kategori="">Ana Sayfa</a>
+@foreach (string kategori in Model)
+{
+   
+    <a class="btn btn-block @(kategori == ViewBag.SecilenKategori ? "btn-primary": "btn-outline-secondary")" asp-action="Index" asp-controller="Home" asp-route-kategori="@kategori" asp-route-urunSayfa="1">@kategori</a>
+
+}
